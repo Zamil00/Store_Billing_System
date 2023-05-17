@@ -1,0 +1,17 @@
+--------------------------------------------
+QUERIES FOR THE PROJECT STORE BILLING SYSTEM
+--------------------------------------------
+
+create database sbs;
+use sbs;
+--------------------------------------------
+List of tables:
+
+create table users (Email varchar(50), Password varchar (20));
+create table stock(ProductID varchar(20), Detail varchar(20), Company varchar(20), Quantity integer(5));
+create table sale(Date varchar(20), ProductID varchar(20), Company varchar(20), Payment varchar(20));
+--------------------------------------------
+insert into users values ("admin", "admin");
+insert into sale values("01/01/2023", "10001", "company1", "4000");
+
+show tables;
